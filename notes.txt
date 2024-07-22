@@ -1,0 +1,51 @@
+DVAPTool version 1.05
+Restored parameters:
+  UserCallsign=KD0PBZ
+  DVDevice=/dev/ttyUSB0
+  Frequency=146550000
+  SquelchLevel=-80
+  TxPowerLevel=13
+  LockedCallsign=true
+  FontNumerator=50
+Callsign set to KD0PBZ
+O/S: Linux
+O/S kernel type (linux)
+O/S kernel version (6.5.0-44-generic)
+O/S product name (Ubuntu 22.04.4 LTS)
+O/S product type (ubuntu)
+O/S product version (22.04)
+Process architecture: X86
+networkInterface: lo:127.0.0.1:255.0.0.0:127.255.255.255
+FTDI serial device ttyUSB0 found (A602RQDT)
+networkInterface: wlp2s0:192.168.88.48:255.255.255.0:192.168.88.255
+networkInterface: virbr0:192.168.122.1:255.255.255.0:192.168.122.255
+New device notification for (/dev/ttyUSB0) (A602RQDT)
+Worker added device (/dev/ttyUSB0)
+Frequency set to 146550000
+new frequency (146550000)
+Serial device (/dev/ttyUSB0) added
+Serial device (/dev/ttyUSB0) added
+Callsign set to (KD0PBZ)
+Opening DVAP device /dev/ttyUSB0
+Opened device /dev/ttyUSB0
+Found 1 FTDI device(s)
+Reported Device name (DVAP Dongle)
+Reported Device serial number (AP073034)
+Reported Device boot firmware version (1.09)
+Reported Device app firmware version (1.07)
+Reported Device transmit start frequency (144000000)
+Reported Device transmit end frequency (148000000)
+Reported Device receive frequency (146550000)
+Reported Device receive frequency (146550000)
+Reported Device transmit frequency (146550000)
+Reported Device transmit frequency (146550000)
+Reported Device calibration value (-12)
+Reported Device receive frequency (146550000)
+Reported Device transmit frequency (146550000)
+Finished reading from name server
+Reported Device mode (GMSK)
+DStar name server text message received ->You are running the latest version of DVAPTool.
+Please check the DVAPDongle yahoo group for future software updates
+
+Ascp device started
+
