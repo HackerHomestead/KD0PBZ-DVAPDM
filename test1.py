@@ -19,10 +19,10 @@ print("Sending ... ")
 # Write the array of hex values to the serial device
 
 # Make it say DVAP Dongle (ASCII String)
-#data = "04200100" # [04][20] [01][00]
+data = "04200100" # [04][20] [01][00]
 
 # Print Serial number (ASCII String)
-data = "04200200" # [04][20] [02][00]
+#data = "04200200" # [04][20] [02][00]
 
 bytes_object = bytes.fromhex(data)
 print(data)
