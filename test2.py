@@ -30,18 +30,30 @@ data = "0500280001" # Set GMSK Mode
 # Set RX/TX to 146.520
 data = "08002002C0B7BB08" # LSB 0x08BBB7C0
 
+# Set Run State
+# 0500180000 # DVAP in inactive idle state
+# 0500180001 # DVAP in active state
+
+# Will get this when RX is on (1) when TX is on
+# 0520180100
+
 bytes_object = bytes.fromhex(data)
 print(data)
 ser.write(bytes_object)
-
 
 # Read and print out any incoming data from the serial port
 print("Listening...")
 while True:
     try:
-        incoming_data = ser.read(8)  # Read up to 1 byte with a 100ms timeout
-        if incoming_data:
-            print(f"Received: {incoming_data.hex()}")
+        rx = True
+        while rx:
+            incoming_data = ser.read(1)  # Read up to 1 byte with a 100ms timeout
+            if incoming_data:
+                print(f"{incoming_data.hex()} ", end='')
+                rx = True
+            else:
+                print("")
+                rx = False
 
         #Ok next step is to read until the buffer is empty
 
@@ -51,7 +63,7 @@ while True:
                 print("Exiting ... ")
                 sys.exit(0)
             bytes_object = bytes.fromhex(data)
-            print("SND:", data)
+            #print("SND:", data)
             ser.write(bytes_object)
 
         
